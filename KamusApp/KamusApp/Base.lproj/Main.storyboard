@@ -6,10 +6,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kamus Table View Controller-->
+        <!--Kamus ENG-IND-->
         <scene sceneID="aUo-Js-vtp">
             <objects>
                 <tableViewController id="pJx-Fe-XHb" customClass="KamusTableViewController" customModule="KamusApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,11 +69,85 @@
                             <outlet property="delegate" destination="pJx-Fe-XHb" id="05e-8K-te5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gYh-KH-nD9"/>
+                    <navigationItem key="navigationItem" title="Kamus ENG-IND" id="gYh-KH-nD9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tEu-gJ-Rgh">
+                            <connections>
+                                <segue destination="e2P-Ph-4Ll" kind="modal" id="cy1-2J-HYY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtm-EW-6T3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1204" y="-67.016491754122939"/>
+        </scene>
+        <!--Tambah Data View Controller-->
+        <scene sceneID="2yD-G6-JY8">
+            <objects>
+                <viewController id="e2P-Ph-4Ll" customClass="TambahDataViewController" customModule="KamusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aeg-MU-gaS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbm-L7-2o7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Tambah Data Kamus" id="bRm-es-nxU">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="previous" id="Ipa-xe-bBF">
+                                            <connections>
+                                                <segue destination="BDm-GT-hHd" kind="modal" id="mR8-zQ-jp4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="download-button" id="2wi-CU-oNY">
+                                            <connections>
+                                                <action selector="btnSaveData:" destination="e2P-Ph-4Ll" id="5us-8L-eHb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7s-Bk-YwM">
+                                <rect key="frame" x="16" y="97" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INDONESIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdw-af-LbQ">
+                                <rect key="frame" x="16" y="212" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukan Text English " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-QH-OEr">
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukan Terjemahan" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DN6-nU-ErE">
+                                <rect key="frame" x="16" y="256" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="4xm-JF-alD"/>
+                    </view>
+                    <connections>
+                        <outlet property="etTeksEnglish" destination="Pex-QH-OEr" id="hMv-04-Jsj"/>
+                        <outlet property="etTeksIndonesia" destination="DN6-nU-ErE" id="Jqa-aa-yUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUL-ty-P3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.8" y="-61.619190404797607"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L18-Vx-5Tw">
@@ -82,6 +157,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZp-Dx-Kzf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -93,4 +169,8 @@
             <point key="canvasLocation" x="321.60000000000002" y="-66.566716641679164"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download-button" width="24" height="24"/>
+        <image name="previous" width="24" height="24"/>
+    </resources>
 </document>

@@ -17,6 +17,7 @@
 		DC4B75B51FB40240007E976E /* Kamus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B75B41FB40240007E976E /* Kamus.swift */; };
 		DC4B75B71FB40261007E976E /* KamusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B75B61FB40261007E976E /* KamusTableViewController.swift */; };
 		DC4B75B91FB40272007E976E /* KamusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B75B81FB40272007E976E /* KamusTableViewCell.swift */; };
+		DC4B75BB1FB45248007E976E /* TambahDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B75BA1FB45247007E976E /* TambahDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DC4B75B41FB40240007E976E /* Kamus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kamus.swift; sourceTree = "<group>"; };
 		DC4B75B61FB40261007E976E /* KamusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamusTableViewController.swift; sourceTree = "<group>"; };
 		DC4B75B81FB40272007E976E /* KamusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamusTableViewCell.swift; sourceTree = "<group>"; };
+		DC4B75BA1FB45247007E976E /* TambahDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DC4B75861FB40176007E976E /* AppDelegate.swift */,
 				DC4B75881FB40176007E976E /* ViewController.swift */,
 				DC4B758A1FB40176007E976E /* Main.storyboard */,
+				DC4B75BA1FB45247007E976E /* TambahDataViewController.swift */,
 				DC4B75B41FB40240007E976E /* Kamus.swift */,
 				DC4B75B61FB40261007E976E /* KamusTableViewController.swift */,
 				DC4B75B81FB40272007E976E /* KamusTableViewCell.swift */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4B75B51FB40240007E976E /* Kamus.swift in Sources */,
+				DC4B75BB1FB45248007E976E /* TambahDataViewController.swift in Sources */,
 				DC4B75B71FB40261007E976E /* KamusTableViewController.swift in Sources */,
 				DC4B75891FB40176007E976E /* ViewController.swift in Sources */,
 				DC4B75B91FB40272007E976E /* KamusTableViewCell.swift in Sources */,
